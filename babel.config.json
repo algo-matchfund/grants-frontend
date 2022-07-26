@@ -1,0 +1,60 @@
+{
+  "env": {
+    "test": {
+      "presets": [
+        "jest",
+        [
+          "@babel/preset-react",
+          {
+            "runtime": "automatic"
+          }
+        ],
+        [
+          "@babel/preset-env",
+          {
+            "modules": "commonjs",
+            "useBuiltIns": "usage",
+            "corejs": 3
+          }
+        ]
+      ]
+    }
+  },
+  "presets": [
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ],
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "bugfixes": true,
+        "corejs": 3
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "": "./src",
+          "/assets": "./assets",
+          "/components": "./components",
+          "/context": "./context",
+          "/data": "./data",
+          "/hooks": "./hooks",
+          "/service": "./service",
+          "/util": "./util",
+          "/views": "./views",
+          "shards-react": "./shards-react"
+        }
+      }
+    ],
+    "@babel/plugin-proposal-class-properties"
+  ]
+}

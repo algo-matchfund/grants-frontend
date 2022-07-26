@@ -1,0 +1,78 @@
+@import 'base.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#root {
+  display: block;
+  width: $max;
+  height: $max;
+  max-width: $max;
+  max-height: $max;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+a {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+}
+
+input,
+textarea,
+.form-control {
+  font-weight: normal;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    color: #aaa;
+  }
+}
+
+.btn {
+  background-color: #5890ff;
+  border: 1px solid #5890ff;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+
+  &.btn-light {
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+}
+
+.gradient-font {
+  background: -webkit-linear-gradient(
+    345deg,
+    #36c9d2 0%,
+    #1d9add 66%,
+    #005fed 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dropdown-item {
+  font-weight: 400;
+  color: #888;
+}

@@ -1,0 +1,120 @@
+.create-project {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+
+  h1 {
+    letter-spacing: 0;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+
+  &.full-width {
+    width: 100%;
+    max-width: none;
+    
+    & > h1, .create-project-progress {
+      width: 95%;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .create-project-content {
+    input,
+    textarea,
+    select {
+      background-color: #fcfcfe;
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: #777;
+    }
+
+    label {
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 10px;
+      cursor: default;
+    }
+
+    .create-project-name-input {
+      color: #555;
+      text-shadow: none;
+      font-size: 48px;
+      padding: 20px 50px;
+      margin: 50px 0 30px;
+
+      &::placeholder {
+        font-size: 32px;
+        color: #bbb;
+      }
+
+      &:focus {
+        box-shadow: 0 0 16px #ccc;
+
+        &::placeholder {
+          text-shadow: none;
+          color: #888;
+        }
+      }
+    }
+
+    .create-project-icon-upload-label {
+      margin-top: 30px;
+    }
+
+    .create-project-icon-upload {
+      width: 128px;
+      height: 128px;
+      background-color: #fcfcfe;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 200ms;
+      margin-bottom: 80px;
+      padding: 0;
+      overflow: hidden;
+
+      &:hover {
+        border: 1px solid #007bff;
+        box-shadow: 0 0.313rem 0.719rem rgba(0, 123, 255, 0.1),
+          0 0.156rem 0.125rem rgba(0, 0, 0, 0.06);
+      }
+
+      input[type='file'] {
+        display: none;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .create-project-alert {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 500;
+    padding: 15px 50px;
+    border-radius: 10px;
+  }
+}

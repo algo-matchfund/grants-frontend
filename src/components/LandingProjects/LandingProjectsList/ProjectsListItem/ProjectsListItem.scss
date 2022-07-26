@@ -1,0 +1,149 @@
+.projects-list-item {
+  position: relative;
+  background-color: #fff;
+  width: 80%;
+  min-width: 700px;
+  height: 150px;
+  box-shadow: 0 0 8px #eee;
+  border-radius: 5px;
+  margin: 30px 20px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 300ms ease-out;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 8px #ddd;
+  }
+
+  .content-container {
+    height: 100%;
+    padding: 10px 20px 10px 30px;
+
+    .content-header {
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 100px;
+        margin-bottom: 5px;
+      }
+
+      button {
+        background-color: #fff;
+        border: none;
+        padding-bottom: 5px;
+      }
+    }
+
+    p {
+      color: #888;
+      font-size: 11px;
+      margin-bottom: 0;
+
+      b {
+        color: #222;
+        font-size: 14px;
+      }
+    }
+
+    .gradient-font {
+      font-size: 28px;
+      font-weight: 500;
+      padding: 5px;
+    }
+
+    .buttons {
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .btn {
+        font-size: 12px;
+        padding: 0px 10px;
+        width: 80px;
+        height: 25px;
+        margin-right: 20px;
+        border-radius: 5px;
+        background-color: #89c0eb;
+        border: none;
+
+        &.btn-light {
+          background-color: #eee;
+          color: #555555;
+        }
+      }
+    }
+  }
+  .image-container {
+    width: 120px;
+    height: 120px;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      width: 80%;
+      object-fit: fill;
+    }
+  }
+
+  .stats-container {
+    color: #888888;
+    padding: 20px;
+    min-width: 380px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+      width: 1px;
+      height: 90px;
+      border-left: 1px solid #ddd;
+    }
+
+    b {
+      color: #555;
+    }
+
+    .gradient-font {
+      font-size: 28px;
+      font-weight: 500;
+      padding: 0 5px 0 10px;
+    }
+
+    .donors {
+      .avatars {
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+
+        .avatar {
+          box-shadow: 2px 0 2px #fafafa;
+          width: 25px;
+          height: 25px;
+          margin-right: -1px;
+          border: 1px solid #ddd;
+          border-radius: 50%;
+          overflow: hidden;
+          
+          img {
+            max-width: 100%;
+            max-height: auto;
+            object-fit: contain;
+          }
+        }
+      }
+
+      padding-bottom: 30px;
+      align-self: flex-end;
+    }
+  }
+}

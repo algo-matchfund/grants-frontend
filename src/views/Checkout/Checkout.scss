@@ -1,0 +1,111 @@
+.checkout {
+  min-height: calc(100vh - 70px);
+  padding: 50px 30px 120px;
+  margin: 0 auto;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.8;
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  main {
+    width: calc(100% - 500px);
+    padding-right: 50px;
+
+    .project-donations-list {
+      padding: 10px;
+      background-color: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      margin-top: 50px;
+      max-height: calc(100vh - 350px);
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+
+  aside {
+    background-color: #f6f9fc;
+    width: 500px;
+    min-height: 680px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    .payment {
+      min-height: 350px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 40px;
+
+      .payment-methods {
+        padding-bottom: 20px;
+
+        &.nav-pills:hover {
+          background-color: transparent;
+        }
+
+        button.btn {
+          height: 60px;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+
+          &.btn-active {
+            background-color: #5890ff;
+            border: 1px solid #5890ff;
+          }
+
+          &:hover {
+            box-shadow: 0 0 4px #ddd;
+          }
+
+          &.btn-active:hover {
+            background-color: #006fe6;
+            border: 1px solid #006fe6;
+          }
+        }
+
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+
+        img {
+          object-fit: contain;
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .cvv,
+      .date {
+        width: 45%;
+      }
+
+      #payment-form {
+        min-height: 180px;
+      }
+    }
+
+    .confirmation {
+      .total-amount {
+        padding: 20px;
+        color: #222;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      button {
+        height: 55px;
+        margin: 20px 0;
+      }
+    }
+  }
+}

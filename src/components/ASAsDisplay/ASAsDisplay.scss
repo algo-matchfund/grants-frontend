@@ -1,0 +1,14 @@
+.ASA-display {
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+  color: #888;
+
+  .amount {
+    font-weight: 600;
+    color: #555;
+    padding-right: 40px;
+  }
+}

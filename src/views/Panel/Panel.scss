@@ -1,0 +1,57 @@
+.panel {
+  width: 100%;
+  max-width: 1200px;
+  min-height: calc(100vh - 70px);
+  margin: 0 auto 50px;
+
+  nav {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #eee;
+
+    button {
+      margin: 10px;
+      background-color: transparent;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      padding: 5px 10px;
+      color: #888;
+
+      &.selected {
+        color: rgb(13, 103, 163);
+      }
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+
+  main {
+    padding: 10px;
+
+    h2 {
+      font-size: 18px;
+      padding: 30px 10px 20px;
+      margin-bottom: 0;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        width: 53.5%;
+      }
+
+      div {
+        width: 19.5%;
+        padding-bottom: 5px;
+        font-size: 14px;
+        color: #000;
+      }
+    }
+  }
+}

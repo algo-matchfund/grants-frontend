@@ -1,0 +1,40 @@
+.step-1 {
+  color: #777;
+
+  .form-control {
+    margin-bottom: 10px;
+  }
+
+  .input-group-prepend {
+    height: 45px;
+
+    .input-group-text {
+      color: #000;
+      font-size: 14px;
+      font-family: inherit;
+      padding: 10px 20px;
+    }
+  }
+
+  .input-half {
+    width: 47%;
+
+    &.left {
+      margin-right: 5%;
+    }
+  }
+
+  .input-third {
+    width: 32%;
+  }
+
+  .input-house-number {
+    width: 150px;
+    margin-right: 5%;
+  }
+
+  .form-control#date,
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+}

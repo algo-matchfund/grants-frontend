@@ -1,0 +1,136 @@
+.project-detail-container {
+  padding: 80px 30px 150px;
+  margin: 0 auto;
+  max-width: 1400px;
+  line-height: 1.8;
+
+  .project-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main {
+    width: calc(100% - 500px);
+    max-width: 800px;
+    padding-right: 100px;
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #eee;
+      border-radius: 5px;
+
+      img {
+        max-width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    a {
+      font-weight: 500;
+    }
+
+    h1 {
+      padding: 40px 0 30px;
+      font-weight: 500;
+      font-size: 36px;
+    }
+
+    .links {
+      > :first-child {
+        margin-right: 50px;
+      }
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    h2 {
+      padding: 50px 0 20px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    ul {
+      padding-left: 10px;
+    }
+  }
+
+  aside {
+    width: 500px;
+
+    .project-detail-panel {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 80px;
+
+      .stats {
+        font-weight: 500;
+        color: #888;
+
+        b {
+          font-size: 28px;
+          color: #222;
+        }
+
+        padding: 30px;
+        display: grid;
+        border-bottom: 1px solid #ddd;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        & > div {
+          padding: 10px;
+        }
+      }
+
+      .actions {
+        padding: 20px 50px 30px;
+
+        button {
+          font-size: 16px;
+          font-weight: 500;
+          border-radius: 10px;
+          height: 66px;
+          width: 100%;
+          margin: 15px 0;
+        }
+
+        .donate {
+          background-color: #5890ff;
+          color: #fff;
+          border: 1px solid #5890ff;
+        }
+
+        .share {
+          background-color: #fff;
+          color: #5890ff;
+          border: 1px solid #ddd;
+          box-shadow: 0 0 8px #eee;
+
+          &:hover {
+            box-shadow: 0 4px 16px #ddd;
+          }
+        }
+      }
+    }
+
+    .image-container {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+
+      img {
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+    }
+  }
+}

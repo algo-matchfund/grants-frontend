@@ -1,0 +1,242 @@
+.donate-modal.modal-dialog {
+  width: 100vw;
+  max-width: 1200px;
+
+  .modal-content {
+    height: 90vh;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+
+    .donate-select-type-body {
+      margin: 0 auto;
+
+      h2 {
+        color: #ccc;
+        margin: 20% 0;
+        text-align: center;
+      }
+
+      .donate-select-type-buttons {
+        margin: 45% auto 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+
+        .donate-select-type-button-container {
+          color: #aaa;
+          font-size: 14px;
+          font-weight: 600;
+
+          button {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            margin: 0 20px;
+            box-shadow: 0 0 32px #555;
+            border: 1px solid #222;
+            background-color: #111;
+            background: linear-gradient(
+              90deg,
+              rgb(220, 220, 220) 0%,
+              rgb(245, 245, 245) 100
+            );
+            margin-bottom: 15px;
+            transition: 200ms all;
+
+            img {
+              width: 128px;
+              height: 128px;
+            }
+
+            .asa-logo {
+              margin: 0 auto;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 128px;
+              height: 128px;
+              border-radius: 50%;
+              background-color: #242424;
+              color: #fff;
+              font-weight: bold;
+              font-size: 48px;
+            }
+
+            &:hover {
+              transform: scale(1.01);
+              box-shadow: 0 0 32px #888;
+            }
+          }
+        }
+      }
+    }
+
+    .donation-stats {
+      position: absolute;
+      z-index: 100;
+      left: 50px;
+      top: 50px;
+      color: #aaa;
+      width: 150px;
+
+      svg {
+        width: 30px;
+        transform: scale(2);
+        margin-right: 5px;
+      }
+
+      .donation-stats-total {
+        color: rgb(255, 215, 180);
+        text-shadow: 0 0 5px rgb(255, 241, 215);
+      }
+
+      h2 {
+        color: #eee;
+        font-size: 36px;
+        text-shadow: 0 0 5px #eee;
+      }
+
+      div {
+        font-size: 16px;
+        color: #eee;
+        margin-bottom: 40px;
+      }
+    }
+
+    .donate-content {
+      position: absolute;
+      width: 305px;
+      height: 575px;
+      z-index: 100;
+      right: 30px;
+      bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+
+      ul {
+        overflow-y: auto;
+        background-color: #444;
+        border-radius: 5px;
+        width: 100%;
+        height: 480px;
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        color: #ccc;
+        text-align: center;
+        
+        li {
+          color: #fff;
+          border-bottom: 1px solid #666;
+          padding: 10px;
+          text-overflow: ellipsis;
+          cursor: pointer;
+          transition: 100ms all;
+
+          &:hover {
+            background-color: #aaa;
+            color: #222;
+          }
+        }
+      }
+
+      h3 {
+        color: #ddd;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        width: 215px;
+        height: 45px;
+        font-weight: 500;
+        border-radius: 5px;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        button {
+          margin: 10px;
+          border: 1px solid #aaa;
+          color: #ddd;
+          background: none;
+
+          &:hover {
+            border: 1px solid rgb(210, 250, 255);
+            background-color: rgba(210, 250, 255, 0.1);
+            color: rgb(210, 250, 255);
+          }
+        }
+      }
+
+      .donate-checkout {
+        height: 45px;
+        border: none;
+        background-color: #89c0eb;
+        color: #fff;
+        transition: 200ms;
+
+        &:hover {
+          background-color: #409adf;
+        }
+
+        &:disabled {
+          background-color: #ddd;
+          cursor: default;
+        }
+      }
+
+      input {
+        border: 1px solid #777;
+        color: #ddd;
+        background-color: #555;
+        font-weight: 500;
+        width: 215px;
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+
+        &::placeholder {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .close-button,
+  .back-button {
+    position: absolute;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    transition: 200ms;
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: none;
+      opacity: 0.5;
+    }
+  }
+
+  .close-button {
+    top: 10px;
+    right: 30px;
+  }
+
+  .back-button {
+    bottom: 15px;
+    left: 20px;
+  }
+}
+
+.donate-backdrop.show {
+  opacity: 0.7;
+  background-color: #000;
+}

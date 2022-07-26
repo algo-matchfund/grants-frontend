@@ -1,0 +1,124 @@
+.create-project-content {
+  .step-2 {
+    .upload-container {
+      p {
+        font-weight: normal !important;
+        font-size: 16px !important;
+        color: #aaa !important;
+      }
+    }
+
+    .file-items {
+      overflow-y: auto;
+      max-height: 210px;
+      margin-top: 5px;
+
+      .file-item {
+        width: 100%;
+        padding: 15px 20px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+    }
+
+    input {
+      margin-bottom: 20px;
+      transition: 200ms;
+    }
+
+    textarea {
+      margin-bottom: 30px;
+      transition: 200ms;
+      min-height: 240px;
+    }
+
+    .form-group {
+      order: -1;
+
+      textarea {
+        margin-bottom: 5px;
+        min-height: 120px;
+      }
+    }
+
+    .btn.add {
+      display: block;
+      width: 190px;
+      height: 40px;
+      margin: 20px 0 80px;
+      padding: 0;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    .btn.btn-secondary {
+      background-color: #bbb;
+      border-color: #bbb;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+
+      &:hover {
+        background-color: #999;
+      }
+
+      &.remove {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        width: 120px;
+
+        svg {
+          margin-right: 10px;
+        }
+
+        &:hover + .form-group {
+          input,
+          textarea {
+            background-color: rgb(255, 240, 240);
+          }
+        }
+      }
+    }
+
+    .upload-container {
+      margin-bottom: 30px;
+    }
+
+    .file-items {
+      margin: 10px 0 30px;
+      height: 130px;
+      position: relative;
+      z-index: 100;
+
+      img {
+        object-fit: contain;
+        margin-top: 20px;
+        height: calc(100% - 20px);
+      }
+
+      button {
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        background-color: rgb(255, 134, 118);
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: inline;
+        position: relative;
+        top: -40px;
+        right: 10px;
+
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+}

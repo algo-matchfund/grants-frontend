@@ -1,0 +1,22 @@
+@import '../../base.scss';
+
+.loader-container {
+  display: block;
+  width: $max;
+  height: $max;
+
+  & > svg {
+    display: block;
+    margin: auto;
+    margin-top: 20%;
+    color: var(--blue);
+  }
+}
+
+.card .loader-container {
+  height: fit-content;
+
+  & svg {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.status-modal {
+  & p {
+    margin-bottom: 0;
+  }
+}
+
+#status-success svg {
+  color: var(--success);
+}
+
+#status-failure svg {
+  color: var(--danger);
+}
+
+#status-warning svg {
+  color: var(--warning);
+}

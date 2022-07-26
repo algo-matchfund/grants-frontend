@@ -1,0 +1,113 @@
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('assets/fonts/roboto-v29-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/roboto-v29-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('assets/fonts/roboto-v29-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/roboto-v29-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('assets/fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/roboto-v29-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-900 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('assets/fonts/roboto-v29-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/roboto-v29-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+$max: 100%;
+
+// Some extra colors in addition to Shards theme
+$almost-black: #2a2a2a;
+$header-gray: rgba(90,97,105,.06);
+$light-gray: #E2E2E2;
+$somewhat-gray: #C2C2C2;
+$off-white: #F2F2F2;
+$primary: #007bff;
+$light-blue: #82beff;
+
+b {
+  font-weight: 600;
+}
+
+:root {
+  --light-gray: #E2E2E2;
+  --somewhat-gray: #C2C2C2;
+  --off-white: #F2F2F2;
+}
+
+*,*:focus,*:hover{
+  outline:none;
+}
+
+.btn {
+  transition-property: width, height, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(.27,.01,.38,1.06);
+}
+
+// Make all the cards more defined
+.card {
+  border: 1px solid $light-gray;
+}
+
+.fade-enter {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.react-datepicker__month-container {
+  border-radius: .375rem;
+}

@@ -1,0 +1,36 @@
+.fund-success {
+  width: 100%;
+  max-width: 1500px;
+  min-height: calc(100vh - 70px);
+  padding: 50px 30px 160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  span {
+    color: #35a762;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .fund-success-buttons-container {
+    display: flex;
+
+    button {
+      width: 140px;
+    }
+
+    button:first-child {
+      margin-right: 40px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.review-pending-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: #777;
+
+  &:hover {
+    background-color: rgb(237, 250, 244);
+  }
+
+  .review-pending-item-type {
+    width: 50px;
+  }
+
+  .review-pending-item-name {
+    font-weight: 600;
+    width: 56%;
+  }
+
+  .review-pending-item-user {
+    width: 23%;
+  }
+
+  .review-pending-item-last-opened {
+    width: 23%;
+  }
+
+  .review-pending-item-menu {
+    border: none;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}

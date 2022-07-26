@@ -1,0 +1,27 @@
+@import "../../base.scss";
+
+footer {
+  border-top: 1px solid #eee;
+  color: #777;
+  font-size: 14px;
+
+  span {
+    margin-right: 1em;
+  }
+
+  &.dark-footer {
+    background-color: $almost-black;
+    color: white;
+  }
+
+  .footer-top {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .footer-links {
+    div {
+      padding: 0 20px;
+    }
+  }
+}

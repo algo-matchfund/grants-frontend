@@ -1,0 +1,79 @@
+.share-modal {
+  width: 98%;
+  max-width: 400px;
+
+  .modal-header {
+    border-bottom: none;
+    padding: 20px;
+
+    .modal-title {
+      margin: 10px auto 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+
+  .modal-body {
+    height: 250px;
+
+    .share-button {
+      border: none;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .twitter-button {
+      background-color: #dcf1ff;
+
+      svg:hover {
+        path {
+          transition: 200ms;
+          fill: #1d9bf0;
+        }
+      }
+    }
+
+    .email-button {
+      background-color: #ffe2e0;
+
+      svg:hover {
+        path {
+          transition: 200ms;
+          fill: #e94134;
+        }
+      }
+    }
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    transition: 200ms;
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: none;
+      opacity: 0.5;
+    }
+  }
+}
+
+.share-modal-backdrop {
+  background-color: #000;
+  opacity: 0.6 !important;
+}

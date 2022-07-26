@@ -1,0 +1,77 @@
+@import '../../base.scss';
+
+$radius: 0.325rem;
+$height: 40.5px;
+
+.search-form {
+  position: relative;
+
+  // chamfered top left corner
+  &:before {
+    content: '';
+    position: absolute;
+    margin: -10px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: #fff;
+  }
+
+  // chamfered bottom right corner
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: -7.2px;
+    width: 19px;
+    height: 19px;
+    transform: rotate(51deg);
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+  }
+
+  #search {
+    min-width: 400px;
+    background-color: #f0f2f4;
+    border: none;
+    box-shadow: none;
+    font-weight: normal;
+
+    &::placeholder {
+      color: #aaa;
+      font-weight: normal;
+    }
+  }
+
+  & input.form-control,
+  .btn {
+    border: 1px solid $light-gray;
+  }
+
+  & input.form-control {
+    height: $height;
+    border-radius: $radius 0 0 $radius;
+    transition: width 200ms;
+    width: 10em;
+  }
+
+  & input.form-control.focused {
+    width: 15em;
+  }
+
+  & .btn {
+    height: $height;
+    border-radius: 0 $radius $radius 0;
+    color: #5a6169;
+  }
+}
+
+.search-form.dark {
+  & input.form-control {
+    background-color: transparent;
+    width: 17.5em;
+    color: white;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,150 @@
+.project-donation-item {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  min-width: 700px;
+  height: 150px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin: 30px 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  transition: 300ms ease-out;
+
+  svg {
+    width: 36px;
+    margin-right: -6px;
+
+    g {
+      fill: #555;
+    }
+  }
+  b {
+    svg {
+      width: 20px;
+      margin-right: -5px;
+
+      g {
+        fill: #555;
+      }
+    }
+  }
+
+  .content-container {
+    width: calc(100% - 120px);
+    height: 100%;
+    padding: 10px 20px 10px 30px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0 5px;
+
+      button {
+        background-color: #fff;
+        border: none;
+        padding-bottom: 5px;
+      }
+    }
+
+    p {
+      color: #888;
+      font-size: 11px;
+      margin-bottom: 0;
+
+      b {
+        color: #222;
+        font-size: 14px;
+      }
+    }
+
+    .gradient-font {
+      font-size: 28px;
+      font-weight: 500;
+      padding: 5px;
+    }
+
+    .buttons {
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .btn {
+        font-size: 12px;
+        padding: 0px 10px;
+        width: 80px;
+        height: 25px;
+        margin-right: 20px;
+        border-radius: 5px;
+        background-color: #89c0eb;
+        border: none;
+
+        &.btn-light {
+          background-color: #eee;
+          color: #555555;
+        }
+      }
+    }
+  }
+  .image-container {
+    width: 120px;
+    height: 120px;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 80%;
+      object-fit: fill;
+    }
+  }
+
+  .stats-container {
+    color: #888888;
+    padding: 20px 20px 20px 0;
+    min-width: 320px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+      width: 1px;
+      height: 90px;
+      border-left: 1px solid #ddd;
+    }
+
+    b {
+      color: #555;
+    }
+
+    .stats {
+      text-align: end;
+      font-size: 13px;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 500;
+      margin: 0;
+      margin-left: 5px;
+    }
+
+    button {
+      font-size: 12px;
+      padding: 5px 25px;
+      border-radius: 2px;
+    }
+
+    .btn-light {
+      background-color: #eeeeee;
+      color: #555555;
+    }
+  }
+}

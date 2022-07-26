@@ -1,0 +1,25 @@
+.overlay {
+  position: fixed;
+  width: 30%;
+  max-height: 40vh;
+  right: 30px;
+  bottom: 30px;
+  display: grid;
+  grid-template-rows: 1fr calc(24px + 2em);
+  z-index: 99999;
+
+  .alerts-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .alert {
+      margin: 1em 1em 0 1em;
+    }
+  }
+
+  .post-loader svg {
+    color: var(--secondary);
+    margin-right: .3em;
+    margin-top: 0;
+  }
+}

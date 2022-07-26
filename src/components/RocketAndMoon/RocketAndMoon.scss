@@ -1,0 +1,90 @@
+.rocket-and-moon {
+  position: relative;
+  background-color: rgb(24, 21, 56);
+  width: 400px;
+  height: 400px;
+  border-radius: 200px;
+  box-shadow: 0 0 70px rgb(180, 174, 255);
+
+  .lift-off-container {
+    transform: scale(0.3) rotate(45deg);
+    left: -50px;
+
+    .booster {
+      top: 240px;
+    }
+  }
+
+  .star-1 {
+    position: absolute;
+    background-color: #fffdfd;
+    top: 100px;
+    left: 100px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 50px -70px 1px 1px #fffdfd, -70px 150px 1px 0 #fffdfd,
+      90px 150px 1px -1px #ffff00, -90px 100px 1px -1px #ffffff,
+      170px 110px 1px 0.11px #fffdfd, 190px 180px 1px -0.6px #fffc2e,
+      -30px 120px 3px -1px #ffffff;
+    animation: pulsate 5.3s ease;
+    animation-iteration-count: infinite;
+  }
+  .star-2 {
+    position: absolute;
+    background-color: #ffff00;
+    top: 180px;
+    left: 250px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: 100px 50px 2px 1px #ffff00, -99px 30px 1px 0.09px #fffdfd,
+      15px 160px 0.5px 1px #fffdfd, -200px -100px 1px -1px #ffff00,
+      0px 120px 1px -1px #ffff00, -150px -100px 1px -1px #ffff00;
+    animation: pulsate 7.7s ease;
+    animation-iteration-count: infinite;
+  }
+
+  .moon {
+    background-color: #fdf5e5;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px 0 10px 3px rgba(229, 229, 229, 0.3),
+      0 0 10px 2px rgba(229, 229, 229, 0.3),
+      5px 0 10px 3px rgba(229, 229, 229, 0.3),
+      0px 0 3px 2px rgba(229, 229, 229, 0.3);
+  }
+
+  .moon::after {
+    content: '';
+    background-color: rgba(162, 162, 162, 0.81);
+    display: block;
+    position: absolute;
+    left: 130px;
+    top: 35px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 3px 0 0 1px rgba(98, 98, 98, 0.51),
+      7px 35px 0 -5px rgba(162, 162, 162, 0.9),
+      9px 35px 0 -5px rgba(100, 100, 100, 0.51),
+      25px 20px 0 -5px rgba(162, 162, 162, 0.9),
+      27px 20px 0 -5px rgba(100, 100, 100, 0.51);
+  }
+
+  @keyframes pulsate {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

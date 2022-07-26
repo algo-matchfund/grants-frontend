@@ -1,0 +1,272 @@
+.bubbles {
+  $time: 60s;
+  $height: 1900px;
+
+  // random percentage between 30% to 100% in 10% intervals
+  @function rp() {
+    $rand: ((random(10) + 10) * 10%);
+    @return $rand;
+  }
+
+  width: 100%;
+  height: 100%;
+
+  .bubble {
+    position: relative;
+    margin: 70px 30px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 0 16px #ddd;
+    overflow: hidden;
+    transition: 500ms ease-out;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 16px #ddd,
+      0 0 25px 25px rgba(0, 132, 255, 0.05),
+      0 0 40px 40px rgba(0, 255, 255, 0.05);
+    }
+
+    img {
+      width: 80%;
+      object-fit: contain;
+    }
+
+    &.bubble-1 {
+      width: 120px;
+      height: 120px;
+      top: 0;
+      left: 120px;
+      animation: morph1 5s linear infinite;
+    }
+
+    &.bubble-2 {
+      width: 300px;
+      height: 300px;
+      top: 20px;
+      left: 90px;
+      animation: morph2 5s linear infinite;
+    }
+
+    &.bubble-3 {
+      width: 90px;
+      height: 90px;
+      top: 100px;
+      left: 80px;
+      animation: morph3 5s linear infinite;
+    }
+
+    &.bubble-4 {
+      width: 120px;
+      height: 120px;
+      top: 0;
+      left: 220px;
+      animation: morph4 5s linear infinite;
+    }
+
+    &.bubble-5 {
+      width: 120px;
+      height: 120px;
+      top: -60px;
+      left: 100px;
+      animation: morph5 5s linear infinite;
+    }
+
+    &.bubble-6 {
+      width: 240px;
+      height: 240px;
+      top: 30px;
+      left: 120px;
+      animation: morph6 5s linear infinite;
+    }
+
+    &.bubble-7 {
+      width: 110px;
+      height: 110px;
+      top: 70px;
+      left: 80px;
+      animation: morph7 5s linear infinite;
+    }
+
+    &.bubble-8 {
+      width: 140px;
+      height: 140px;
+      top: 0;
+      left: 220px;
+      animation: morph8 5s linear infinite;
+    }
+  }
+
+  // container
+  .first,
+  .second {
+    position: relative;
+    width: 100%;
+    height: $height;
+    overflow: hidden;
+  }
+
+  .first {
+    animation: $time InitialFirstBubbleRise linear,
+      $time $time/2 firstBubbleRise linear infinite;
+  }
+
+  .second {
+    animation: $time secondBubbleRise linear infinite;
+  }
+
+
+  @keyframes morph1 {
+    0%,
+    100% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    25% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    50% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    75% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+  }
+  @keyframes morph2 {
+    0%,
+    100% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    25% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    50% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    75% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+  }
+  @keyframes morph3 {
+    0%,
+    100% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    25% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    50% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    75% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+  }
+  @keyframes morph4 {
+    0%,
+    100% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    25% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    50% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    75% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+  }
+  @keyframes morph5 {
+    0%,
+    100% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    25% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    50% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    75% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+  }
+  @keyframes morph6 {
+    0%,
+    100% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    25% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    50% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    75% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+  }
+  @keyframes morph7 {
+    0%,
+    100% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    25% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    50% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    75% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+  }
+  @keyframes morph8 {
+    0%,
+    100% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    25% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    50% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+    75% {
+      border-radius: #{rp()} #{rp()} #{rp()} #{rp()} / #{rp()} #{rp()} #{rp()} #{rp()};
+    }
+  }
+
+  @keyframes InitialFirstBubbleRise {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-$height * 2);
+    }
+  }
+
+  @keyframes firstBubbleRise {
+    0% {
+      transform: translateY($height);
+    }
+
+    100% {
+      transform: translateY(-$height);
+    }
+  }
+
+  @keyframes secondBubbleRise {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-$height * 2);
+    }
+  }
+}
